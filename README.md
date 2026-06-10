@@ -1,1 +1,40 @@
-# 📊 Telegram Market Analyzer Bot\n\nربات تحلیل‌گر حرفه‌ای بازارهای مالی برای تلگرام\n\n## 🎯 ویژگی‌ها\n\n- ✅ تشخیص خودکار نماد‌های مالی\n- ✅ تحلیل SMC/ICT (Order Block, FVG, BOS, Liquidity)\n- ✅ 5 تایم‌فریم همزمان (M15, M30, H1, H4, D1)\n- ✅ سیستم امتیاز‌دهی (0-100)\n- ✅ سیگنال‌های حرفه‌ای با Entry/SL/TP\n- ✅ خروجی 100% فارسی\n- ✅ قیمت‌های Real-time از TradingView\n- ✅ 24/7 بدون توقف\n\n## 🏗️ معماری\n\n```\nsrc/\n├── bot/                 # Telegram Bot Core\n├── analyzers/           # SMC/ICT Analysis Engine\n├── api-clients/         # API Integration\n├── processors/          # Signal Processing\n├── formatters/          # Farsi Output\n└── utils/               # Helpers\n```\n\n## 🚀 شروع سریع\n\n```bash\nnpm install\nnpm run dev\n```\n\n## 📋 متغیرهای محیطی\n\n```\nTELEGRAM_BOT_TOKEN=your_token\nTWELVE_DATA_KEY=your_key\nFINNHUB_KEY=your_key\n```\n"
+# 📊 Telegram Market Analyzer
+
+⚡ **بات تحلیل سریع و کم‌مصرف برای بازارهای مالی**
+
+## 🎯 ویژگی‌ها
+- ✅ تشخیص خودکار نماد
+- ✅ تحلیل فوری SMC
+- ✅ مصرف دیتا: **~3KB/تحلیل**
+- ✅ زمان تحلیل: **<2 ثانیه**
+- ✅ کش 30 دقیقه‌ای
+- ✅ 24/7 آنلاین
+
+## 🚀 شروع
+```bash
+npm install
+npm run dev
+```
+
+## 📤 مثال نتیجه
+```
+📊 تحلیل | XAUUSD
+2180.50
+
+1H · SMC/Liquidity
+
+خلاصه:
+قیمت در رنج حاضر...
+
+دلایل:
+• اورد بلاک شناسایی شد
+• منطقه FVG مشخص
+• ریسک/ریوارد نامناسب
+
+موج بعدی:
+• حمایت: 2165.30
+• مقاومت: 2195.70
+
+Score 75/100 · No Setup
+⚠️ Educational only
+```
